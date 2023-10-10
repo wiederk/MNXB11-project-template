@@ -31,3 +31,5 @@ The content of the files has been left untouched.
 
 The use of this data is covered by the statements at this link:
 <https://www.smhi.se/data/oppna-data/information-om-oppna-data/villkor-for-anvandning-1.30622>
+
+If you wish you can download additional data from SMHI provided that you follow their Terms Of Use.
