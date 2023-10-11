@@ -29,6 +29,8 @@ We have also included two special files in the base of the repository
   ```
   - The `.clang-format` file holds the configuration that clang-format will use to determine how to format your code. By default, it will be formatted according to Google's style but you can pick any that you like from https://clang.llvm.org/docs/ClangFormatStyleOptions.html
 
+The [datasets](datasets) folder contains open data from SMHI and a README.md with further information about it.
+
 # building the project
 
 We have included a basic Makefile here which should be familiar to you. It follows the same project structure that we have been using in the course. When you add a new translation unit to the project, you have update the dependencies in the Makefile. 
