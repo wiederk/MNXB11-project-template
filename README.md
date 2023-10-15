@@ -14,7 +14,9 @@ Do remember to add your include guards to your header files, otherwise the compi
 get multiple definitions if you end up loading two source files that include the
 same header.
 
-We have also included two special files in the base of the repository 
+In the template you can find a small translation unit called Example (in [src/Example.cxx](src/Example.cxx) and [include/Example.h](include/Example.h)) that shows some commented reminders of how the syntax for some C++ constructs work. Feel free to use this as a reference to remind yourself of how to do something while working on it but make sure to remove it from your final project version!
+
+We have also included three special files in the base of the repository 
 - [.gitignore](.gitignore)
   - This file contains regular expressions that git tells git that it shouldn't add certain file to your repository. 
   - Your git repository should generally not contain binary files like object files or executables nor should it contain build artefacts like external libraries. 
@@ -28,7 +30,9 @@ We have also included two special files in the base of the repository
   clang-format src/Example.cxx -i
   ```
   - The `.clang-format` file holds the configuration that clang-format will use to determine how to format your code. By default, it will be formatted according to Google's style but you can pick any that you like from https://clang.llvm.org/docs/ClangFormatStyleOptions.html
-
+- [rootlogon.C](rootlogon.C)
+  - This file contains code that ROOT will execute automatically whenever you start it, a good place to place general style choices you want to make or anything else you always want to run! 
+  - Be careful to not include anything that depends on your particular machine here (e.g. absolute paths)
 # Building the project
 
 We have included a basic Makefile here which should be familiar to you. It follows the same project structure that we have been using in the course. When you add a new translation unit to the project, you have update the dependencies in the Makefile. 
