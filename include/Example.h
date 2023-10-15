@@ -124,6 +124,15 @@ class Example : public ExampleBase {
   // Overriding the print function in the base class. Declared in the
   // header but defined in the source file!
 
+  // A destructor for the example type. This gets called automatically for us by
+  // the compiler whenever an object of this type is destroyed (typically when
+  // it goes out of scope).
+  //
+  // Since we have virtual functions, we mark the destructor as virtual.
+  // See
+  // https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c127-a-class-with-a-virtual-function-should-have-a-virtual-or-protected-destructor
+  virtual ~Example();
+
   void print() const override;
   // The override keyword tells the compiler that we want this to override an
   // existing virtual function. If we make a mistake, the compiler will tell

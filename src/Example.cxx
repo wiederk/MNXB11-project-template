@@ -42,3 +42,5 @@ void Example::print() const {
 Example::Example(const std::string& a_string,
                  const std::string& a_second_string)
     : some_data{a_string + a_second_string} {}
+
+~Example() { std::cout << "The object is being destroyed!" << std::endl; }
