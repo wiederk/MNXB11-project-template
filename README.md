@@ -37,6 +37,9 @@ We have also included three special files in the base of the repository
   - Be careful to not include anything that depends on your particular machine here (e.g. absolute paths)
 # Building the project
 
+The [datasets](datasets) folder contains open data from SMHI and a README.md with further information about it.
+
+
 We have included a basic Makefile here which should be familiar to you. It follows the same project structure that we have been using in the course. When you add a new translation unit to the project, you have update the dependencies in the Makefile. 
 
 By default, the `all` target will be run which 
