@@ -21,6 +21,7 @@ main: main.cxx src/Example.o
 
 src/%.o: src/%.cxx
 	$(CXX) $(CXXFLAGS) $^ -c -o $@
-
+	
+INCLUDES: -I build/external/include/date.h
 clean:
 	rm -v src/*.o main
