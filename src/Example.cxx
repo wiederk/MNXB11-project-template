@@ -1,5 +1,7 @@
 
+
 #include "Example.h"
+
 
 double square(double input) { return input * input; }
 
