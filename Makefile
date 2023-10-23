@@ -3,8 +3,14 @@ CXXWARNINGS := -Wall -Wextra -Werror
 CXXOPT := -O3
 CXXSTD := -std=c++17
 INCLUDES := -I include
-CXXFLAGS := $(CXXWARNINGS) $(CXXSTD) $(CXXOPT) $(INCLUDES)
-LDFLAGS :=
+ROOTCONFIG :=root-config
+
+#Get ROOT flags for include paths and libraries
+ROOTCXXFLAGS := $(shell $(ROOTCONFIG) --cflags)
+ROOTLIBS :=$(shell $(ROOTCONFIG) --glibs)
+
+CXXFLAGS := $(CXXWARNINGS) $(CXXSTD) $(CXXOPT) $(INCLUDES) $(ROOTCXXFLAGS)
+LDFLAGS := $(ROOTLIBS)
 
 .PHONY: all clean
 
