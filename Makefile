@@ -2,7 +2,7 @@ CXX := g++
 CXXWARNINGS := -Wall -Wextra -Werror
 CXXOPT := -O3
 CXXSTD := -std=c++17
-INCLUDES := -I include
+INCLUDES := -I include -I build/external/include
 ROOTCONFIG :=root-config
 
 #Get ROOT flags for include paths and libraries
@@ -28,6 +28,6 @@ main: main.cxx src/Example.o
 src/%.o: src/%.cxx
 	$(CXX) $(CXXFLAGS) $^ -c -o $@
 	
-INCLUDES: -I build/external/include/date.h
+
 clean:
 	rm -v src/*.o main
