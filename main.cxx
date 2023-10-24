@@ -2,10 +2,11 @@
 #include <iostream>
 #include <argh.h>
 #include <argumentum/argparse.h>
-
+#include <fstream>
+#include <parse_csv.hpp>
+#include <stored_table.hpp>
 using namespace std;
 using namespace argumentum;
-
 int main(int argc, char *argv[]) {
   std::cout << "I am just a code template, you need to implement the "
                "functionality you want to use yourself!"
@@ -41,6 +42,11 @@ int main(int argc, char *argv[]) {
    auto acc = isSum ? accumulate( numbers.begin(), numbers.end(), 0 )
                     : accumulate( numbers.begin(), numbers.end(), INT_MIN, mmax );
    cout << acc << "\n";
-  
+
+//csv code  
+   commata::stored_table table;
+
+  commata::parse_csv(std::ifstream("test.csv"), commata::make_stored_table_builder(table));
+  std::cout << table[1][1] << std::endl;
   return 0;
 }
