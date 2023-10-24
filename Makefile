@@ -2,11 +2,7 @@ CXX := g++
 CXXWARNINGS := -Wall -Wextra -Werror
 CXXOPT := -O3
 CXXSTD := -std=c++17
-<<<<<<< HEAD
-INCLUDES := -I external/include  -L build/argumentum
-=======
-INCLUDES := -I external/include -I external/include/commata/include/commata
->>>>>>> main
+INCLUDES := -I external/include  -I external/include/commata/include/commata -L build/argumentum
 ROOTCONFIG :=root-config
 
 #Get ROOT flags for include paths and libraries
