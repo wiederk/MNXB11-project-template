@@ -1,8 +1,8 @@
 
 #include <iostream>
-#include "external/include/argumentum.h"
-#include "external/include/argh.h"
-#include "external/include/format.h"
+#include "argumentum.h"
+#include "argh.h"
+#include "format.h"
 int main(int argc, char *argv[]) {
   std::cout << "I am just a code template, you need to implement the "
                "functionality you want to use yourself!"
