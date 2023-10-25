@@ -2,14 +2,23 @@ CXX := g++
 CXXWARNINGS := -Wall -Wextra -Werror
 CXXOPT := -O3
 CXXSTD := -std=c++17
-INCLUDES := -I external/include  -I external/include/commata/include/commata -L build/argumentum
+
+INCLUDES := -I include -I external/include -I external/include/commata/include/commata -L build/argumentum
+
+
 ROOTCONFIG :=root-config
 
 #Get ROOT flags for include paths and libraries
 ROOTCXXFLAGS := $(shell $(ROOTCONFIG) --cflags)
 ROOTLIBS :=$(shell $(ROOTCONFIG) --glibs)
 
+
+LDFLAGS := -L external/include/fmt
+LDLIBS :=-lfmt
+
 CXXFLAGS := $(CXXWARNINGS) $(CXXSTD) $(CXXOPT) $(INCLUDES) $(ROOTCXXFLAGS)
+
+
 LDFLAGS := $(ROOTLIBS)
 
 .PHONY: all clean
