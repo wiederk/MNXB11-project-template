@@ -1,8 +1,12 @@
 # MNXB11-project-template
 # About
-This folder contains a skeleton for your project that you can use as
-inspiration. Once you get started, do feel free to go ahead and replace this
-README file with one representing your project.
+This folder shows our final project aswell as the instructions on how to regenerate the results.
+
+# Get started
+After cloning this library, you have to include the library we used for parsing .csv files. We decided to use *commata*, as it offers many possibilites while beeing header-only and thus easy to install.
+
+To install commata, first make sure you are in the root of the repository.
+Then, you want to change into the folder external/ and then afterwards /include. To do so, you can just run *cd external/include*. Now, you just need to run *git clone git@github.com:furfurylic/commata.git*. 
 
 # Directory structure
 
