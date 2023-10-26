@@ -11,13 +11,13 @@ int main() {
 
     std::ifstream inputFile(inputFileName);
     if (!inputFile) {
-        std::cerr << "Error: Unable to open input file." << std::endl;
+        std::cerr << "Error: can not open input file." << std::endl;
         return 1;
     }
 
      std::ofstream outputFile(outputFileName);
     if (!outputFile) {
-        std::cerr << "Error: Unable to open output file." << std::endl;
+        std::cerr << "Error: can not open output file." << std::endl;
         inputFile.close();
         return 1;
     }
@@ -25,17 +25,17 @@ int main() {
     // Define a map to store daily temperature data for each day
     std::map<std::string, std::vector<double>> dayToDailyTemperatures;
 
-    // Read and process the input file
+    // In this step we will read and process the input file
     std::string line;
     while (std::getline(inputFile, line)) {
         std::istringstream lineStream(line);
         std::string date, time; double temperature;
 
-        // Parse the CSV data
+        // The next step is to Parse the CSV data
         if (std::getline(lineStream, date, ',') &&
             std::getline(lineStream, time, ',') &&
             lineStream >> temperature) {
-            // Combine the date and time to create a unique day identifier
+        // putting the extracted date into day variable 
             std::string day = date;
 
             // Store the temperature in the corresponding day's daily temperature vector
