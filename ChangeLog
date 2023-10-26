@@ -1,0 +1,37 @@
+2023-10-26      Yuxin Lin                  <yu6654li-s@student.lu.se>
+        Updated README.md to give instructions on how to reproduce 
+        results
+
+2023-10-26      Sebastian Wiederkehr       <se5748wi-s@student.lu.se>
+        Developed code for analyses, modified main.cxx
+
+2023-10-26      Shilpa Rani Sahu           <shilpa_rani.sahu@sljus.lu.se>
+                Yuxin Lin                  <yu6654li-s@student.lu.se>
+        Developed code for extracting the wanted data & calculating daily
+        averages, added data_extraction.cxx
+
+2023-10-25      Shilpa Rani Sahu           <shilpa_rani.sahu@sljus.lu.se>
+        Developed code for preprocessing the dataset using a bash-script,
+        added cleandata.sh
+
+2023-10-24      Yuxin Lin                  <yu6654li-s@student.lu.se>
+        Implemented fmt-formatting library, modified Makefile
+
+2023-10-24      Shilpa Rani Sahu           <shilpa_rani.sahu@sljus.lu.se>
+        Implemented argumentum-CLI-library, modified Makefile
+
+2023-10-23      Sebastian Wiederkehr       <se5748wi-s@student.lu.se>
+        Modified Makefile to implement commata-csv-library
+
+2023-10-23      Sebastian Wiederkehr       <se5748wi-s@student.lu.se>
+        Added Workplan (developed together)
+
+2023-10-23      Shilpa Rani Sahu           <shilpa_rani.sahu@sljus.lu.se>
+        Cleaned up folder structure from previously wrongly added files 
+        (external libraries which should not go on GitHub)
+
+2023-10-23       Yuxin Lin                  <yu6654li-s@student.lu.se>
+        Added support for root libraries
+
+2023-10-18      Sebastian Wiederkehr       <se5748wi-s@student.lu.se>
+        Created repository by forking EinarElen/MNXB11-project-template
