@@ -22,7 +22,7 @@ int main() {
         return 1;
     }
 
-    // Define a map to store daily temperature data for each year
+    // Define a map to store daily temperature data for each day
     std::map<std::string, std::vector<double>> dayToDailyTemperatures;
 
     // Read and process the input file
