@@ -15,7 +15,7 @@ Then, you want to change into the folder external/ and then afterwards /include.
 Change into the folder external/ and then afterwards /include and then run *git clone git@github.com:fmtlib/fmt.git*. Make a new directory build inside fmt and change into build directory. Run the configiration process by running *cmake -DCMAKE_INSTALL_PREFIX=/path(path to the installation directory).* Run make install to build and install the library. 
 
 ## Data Preparation
-Change into the directory /datasets (*cd datasets*) and run the bash file *./cleandata.sh* and get the file processed_data.csv.
+Change into the directory /datasets (*cd datasets*) and first extract all the datasets from the tarball, by running *tar zxvf datasets.tgzn*. Then run the bash file *./cleandata.sh* and get the file processed_data.csv.
 
 ## Data Extraction
 Make sure you are in the directory /datasets (*cd datasets* if needed) and compile the c++ file data_extraction.cxx by running "g++ data_extraction.cxx -Werror -Wall -Wextra -o extraction". Now run *./extraction* to get the dataset Extracted_data.csv.
