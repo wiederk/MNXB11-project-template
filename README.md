@@ -10,6 +10,20 @@ After cloning this library, you have to include the library we used for parsing 
 To install commata, first make sure you are in the root of the repository.
 Then, you want to change into the folder external/ and then afterwards /include. To do so, you can just run *cd external/include*. Now, you just need to run *git clone git@github.com:furfurylic/commata.git*. 
 
+
+*Argumentum Library(For assignment)
+Build and install the library from the sources by using the bellow syntax:
+cmake -H. -Bbuild -DARGUMENTUM_INSTALL_HEADERONLY=ON -DARGUMENTUM_BUILD_STATIC_LIBS=OFF
+cd build
+cmake --build .
+sudo make install
+In vcpkg directory:
+./vcpkg install argumentum
+Use in CMake Assignment/project:
+cmake -H. -Bbuild -DCMAKE_TOOLCHAIN_FILE=path/to/vcpkg/scripts/buildsystems/vcpkg.cmake
+ 
+ 
+
 *fmt library(not for project, but for C++ homework)
 
 Change into the folder external/ and then afterwards /include and then run *git clone git@github.com:fmtlib/fmt.git*. Make a new directory build inside fmt and change into build directory. Run the configiration process by running *cmake -DCMAKE_INSTALL_PREFIX=/path(path to the installation directory).* Run make install to build and install the library. 
